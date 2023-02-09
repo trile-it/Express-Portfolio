@@ -1,6 +1,8 @@
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <!--<div class="container-fluid">-->
-        <a class="navbar-brand" href="#">COMP229</a>
+        <a class="navbar-brand main-nav__logo ms-4 pt-2 pb-2" href="#">
+            <i class="fa-solid fa-id-badge fa-2xl"></i>
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -12,37 +14,45 @@
                     <% }else{ %>
                 <li class="nav-item">
                     <% } %>
-                    <a class="nav-link active" aria-current="page" href="/home"><i class="fa-solid fa-house-chimney"></i>Home</a>
+                    <a class="nav-link active" aria-current="page" href="/home">
+                        <i class="fa-solid fa-house-chimney main-nav__fa-icon"></i>Home
+                    </a>
                 </li>
                 <% if(title == "About"){ %>
                 <li class="nav-item active">
                     <% }else{ %>
                 <li class="nav-item">
                     <% } %>
-                    <a class="nav-link active" aria-current="page" href="/about"><i class="fa-solid fa-address-card"></i>About</a>
+                    <a class="nav-link active" aria-current="page" href="/about">
+                        <i class="fa-solid fa-address-card main-nav__fa-icon"></i>About
+                    </a>
                 </li>
                 <% if(title == "Products"){ %>
                 <li class="nav-item active">
                     <% }else{ %>
                 <li class="nav-item">
                     <% } %>
-                    <a class="nav-link active" aria-current="page" href="/products"><i
-                                class="fa-brands fa-product-hunt"></i>Products</a>
+                    <a class="nav-link active" aria-current="page" href="/products">
+                        <i class="fa-brands fa-product-hunt main-nav__fa-icon"></i>Products
+                    </a>
                 </li>
                 <% if(title == "Services"){ %>
                 <li class="nav-item active">
                     <% }else{ %>
                 <li class="nav-item">
                     <% } %>
-                    <a class="nav-link active" aria-current="page" href="/services"><i
-                                class="fa-brands fa-servicestack"></i>Services</a>
+                    <a class="nav-link active" aria-current="page" href="/services">
+                        <i class="fa-brands fa-servicestack main-nav__fa-icon"></i>Services
+                    </a>
                 </li>
                 <% if(title == "Contact"){ %>
                 <li class="nav-item active">
                     <% }else{ %>
                 <li class="nav-item">
                     <% } %>
-                    <a class="nav-link active" aria-current="page" href="/contact"><i class="fa-solid fa-id-card"></i>Contact</a>
+                    <a class="nav-link active" aria-current="page" href="/contact">
+                        <i class="fa-solid fa-id-card main-nav__fa-icon"></i>Contact
+                    </a>
                 </li>
             </ul>
         </div>
