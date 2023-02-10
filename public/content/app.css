@@ -1,3 +1,10 @@
+/**
+ * File name: app.css
+ * Student name: Minh Tri Le
+ * Student ID: 301323963
+ * Date: Feb 9, 2023
+ */
+
 body {
   /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
@@ -7,6 +14,7 @@ a {
   color: #00B7FF;
 }
 
+/* ----- Main Nav styles ----- */
 .main-nav__logo i {
   color: #7fffd4;
 }
@@ -15,10 +23,12 @@ a {
   margin-right: 5px;
 }
 
+/* ----- Bottom Nav styles ----- */
 .bottom-nav h1 {
   margin-left: 15px;
 }
 
+/* ----- Home Page styles ----- */
 .home-page h1 span {
   font-weight: 500;
 }
@@ -37,6 +47,7 @@ a {
   font-weight: 500;
 }
 
+/* ----- About Page styles ----- */
 .about-page__top {
   display: flex;
   flex-direction: row;
@@ -70,6 +81,7 @@ a {
   margin-top: 30px;
 }
 
+/* ----- Product Page styles ----- */
 .product-page__card {
   flex-direction: row !important;
 }
@@ -96,6 +108,7 @@ a {
   font-weight: bold;
 }
 
+/* ----- Service Page styles ----- */
 .service-page__title {
   margin-top: 35px;
   font-size: 32px;
@@ -125,7 +138,7 @@ a {
   font-size: 32px;
   font-weight: bold;
 }
-
+/* Animation declarations for Service Page */
 .spinning {
   animation: spin 20s linear infinite;
 }
@@ -145,6 +158,7 @@ a {
   to { transform: rotateY(360deg); }
 }
 
+/* ----- Contact Page styles ----- */
 .contact-page {
   height: 100vh;
   display: flex;
