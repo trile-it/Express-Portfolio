@@ -1,9 +1,32 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
-<main class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to <%= title %> Page</h1>
+<main class="container service-page">
+    <div class="service-page__title">
+        Here is the list of services that I am offering:
+    </div>
+    <div class="service-page__service-list">
+        <div class="service-page__card card mt-5">
+            <img class="spinning" src="/assets/images/React-icon.svg"
+                 alt="React Logo">
+            <div class="service-page__service-details">
+                <p>React.js</p>
+            </div>
+        </div>
+        <div class="service-page__card card mt-5">
+            <img class="flipping" src="/assets/images/Nodejs-icon.svg"
+                 alt="Nodejs Logo">
+            <div class="service-page__service-details">
+                <p>Node.js</p>
+            </div>
+        </div>
+        <div class="service-page__card card mt-5">
+            <img class="flipping" src="/assets/images/Android-logo-2019.svg"
+                 alt="Android Logo">
+            <div class="service-page__service-details">
+                <p>Android</p>
+            </div>
+        </div>
     </div>
 </main>
 

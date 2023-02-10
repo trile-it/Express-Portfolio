@@ -95,3 +95,52 @@ a {
 .product-page__project__details span {
   font-weight: bold;
 }
+
+.service-page__title {
+  margin-top: 35px;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.service-page__card {
+  flex-direction: row !important;
+  align-items: center;
+}
+
+.service-page__card img {
+  width: 350px;
+  min-width: 350px;
+  margin-right: 35px;
+}
+
+.service-page__card:first-child {
+  padding: 20px 0;
+}
+
+.service-page__card:last-child {
+  margin-bottom: 150px;
+}
+
+.service-page__card p {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.spinning {
+  animation: spin 20s linear infinite;
+}
+
+.flipping {
+  animation: flip 5s linear infinite;
+  transform-style: preserve-3d;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes flip {
+  from { transform: rotateY(0deg); }
+  to { transform: rotateY(360deg); }
+}
