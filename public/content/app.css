@@ -69,3 +69,29 @@ a {
 .about-page__bottom {
   margin-top: 30px;
 }
+
+.product-page__card {
+  flex-direction: row !important;
+}
+
+.product-page__card:last-child {
+  margin-bottom: 150px;
+}
+
+.product-page__card img {
+  width: 350px;
+  min-width: 350px;
+  margin-right: 35px;
+}
+
+.product-page__project__details {
+  padding: 15px 15px 15px 0;
+}
+
+.product-page__project__details p {
+  font-size: 26px;
+}
+
+.product-page__project__details span {
+  font-weight: bold;
+}
