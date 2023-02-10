@@ -18,3 +18,21 @@ a {
 .bottom-nav h1 {
   margin-left: 15px;
 }
+
+.home-page h1 span {
+  font-weight: 500;
+}
+
+.home-page__mission-list {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.home-page__more-details {
+  font-size: 32px;
+  font-weight: 300;
+}
+
+.home-page__more-details span {
+  font-weight: 500;
+}

@@ -1,9 +1,32 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
-<main class="container">
+<main class="container home-page">
     <div class="jumbotron">
-        <h1 class="display-4">Welcome to <%= title %> Page</h1>
+        <h1 class="display-4 mt-3">Welcome to <span>Minh Tri Le</span> Portfolio</h1>
+        <h2 class="mt-4">Mission:</h2>
+        <ul class="home-page__mission-list">
+            <li>
+                <p>
+                    My long-term mission is to bring technology applications into daily life to increase
+                    everyone's quality of life quality, allow everyone works more effectively, use energy more efficiently,
+                    and keep the earth exists sustainably.
+                </p>
+            </li>
+            <li>
+                <p>
+                    I do that by keeping learning and catching up with state-of-the-art software technology
+                    to innovate creative and meaningful apps.
+                </p>
+            </li>
+        </ul>
+        <p class="home-page__more-details">
+            <span>More details:</span> See
+            <a href="/about">About Me</a>,
+            <a href="/products/">My Products</a>,
+            <a href="/services">My Services</a>,
+            or <a href="/contact">My Contact</a>
+        </p>
     </div>
 </main>
 
