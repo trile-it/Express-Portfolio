@@ -6,6 +6,17 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });
 
+router.post('/', function(req, res, next) {
+  let { first_name, last_name, contact_number, email, message } = req.body;
+  console.log('First Name: ', first_name);
+  console.log('Last Name: ', last_name);
+  console.log('Contact Number: ', contact_number);
+  console.log('Email: ', email);
+  console.log('Message: ', message);
+
+  res.redirect('/');
+});
+
 router.get('/home', function(req, res, next) {
   res.render('index', { title: 'Home' });
 });

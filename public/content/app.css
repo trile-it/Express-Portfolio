@@ -144,3 +144,19 @@ a {
   from { transform: rotateY(0deg); }
   to { transform: rotateY(360deg); }
 }
+
+.contact-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+.contact-page input[type]:not([type="submit"]) {
+  width: 100%;
+}
+
+.contact-page input[type="submit"] {
+  width: 200px;
+}
