@@ -1,9 +1,26 @@
 <%- include partials/header.ejs %>
 <%- include partials/main_nav.ejs %>
 
-<main class="container">
-    <div class="jumbotron">
-        <h1 class="display-4">Welcome to <%= title %> Page</h1>
+<main class="container about-page">
+    <div class="about-page__top">
+        <img class="card" src="/assets/images/MinhTriLe_Profile_Photo.jpg"
+             alt="MinhTriLe_Profile_Photo">
+        <div class="about-page__top__details">
+            <p><span>Full Name:</span> Minh Tri Le</p>
+            <p>
+                <span>About Me:</span> A motivated, fast learner and experienced Web Developer with a distinguished
+                academic background in computer science; skilled in React.js, Node.js, and Android,
+                working in the e-commerce industry.
+            </p>
+        </div>
+    </div>
+    <div class="about-page__bottom">
+        <h4>
+            More details: See
+            <a href="https://drive.google.com/file/d/193e4ILeHtex6H9Oco9qs3P4BcrAYoV5M/view" target="_blank">
+                My Resume
+            </a>
+        </h4>
     </div>
 </main>
 

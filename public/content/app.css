@@ -36,3 +36,36 @@ a {
 .home-page__more-details span {
   font-weight: 500;
 }
+
+.about-page__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.175);
+  border-radius: 0.375rem;
+  margin-top: 30px;
+}
+
+.about-page__top img {
+  width: 300px;
+  min-width: 300px;
+  height: auto;
+  margin-right: 35px;
+}
+
+.about-page__top__details p {
+  font-size: 32px;
+  margin-bottom: 5px;
+}
+
+.about-page__top__details p:last-child {
+  margin-bottom: 0;
+}
+
+.about-page__top__details span {
+  font-weight: bold;
+}
+
+.about-page__bottom {
+  margin-top: 30px;
+}
