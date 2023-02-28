@@ -4,6 +4,7 @@ let BusinessContacts = require('../models/business_contacts');
 module.exports.displayBusinessContactList = (req, res, next) => {
   BusinessContacts
     .find()
+    .sort({ contactName: 1 })
     .then(businessContactList => {
       res.render('business_contacts/list', { title: 'Business Contacts', BusinessContactList: businessContactList });
     })
