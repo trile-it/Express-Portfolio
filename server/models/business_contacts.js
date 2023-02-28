@@ -5,7 +5,7 @@ let businessContactsModel = mongoose.Schema({
     email: String,
   },
   {
-    collection: 'businessContacts',
+    collection: 'business_contacts',
   });
 
-module.exports = mongoose.model('businessContacts', businessContactsModel);
+module.exports = mongoose.model('business_contact', businessContactsModel);

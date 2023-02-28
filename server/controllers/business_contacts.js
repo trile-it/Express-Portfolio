@@ -1,8 +1,8 @@
 // Connect to our business contacts model
-let businessContacts = require('../models/business_contacts');
+let BusinessContacts = require('../models/business_contacts');
 
 module.exports.displayBusinessContactList = (req, res, next) => {
-  businessContacts
+  BusinessContacts
     .find()
     .then(businessContactList => {
       res.render('business_contacts/list', { title: 'Business Contacts', BusinessContactList: businessContactList });
@@ -14,7 +14,7 @@ module.exports.displayBusinessContactList = (req, res, next) => {
 };
 
 module.exports.displayUpdatePage = (req, res, next) => {
-  businessContacts
+  BusinessContacts
     .findById(req?.params?.id)
     .then(businessContactToUpdate => {
       res.render('business_contacts/update', { title: 'Update Business Contact', businessContact: businessContactToUpdate });
@@ -27,13 +27,13 @@ module.exports.displayUpdatePage = (req, res, next) => {
 
 module.exports.processUpdateBusinessContact = (req, res, next) => {
   let id = req.params.id
-  let updatedContact = businessContacts({
+  let updatedContact = new BusinessContacts({
     '_id': id,
     'contactName': req.body.contactName,
     'contactNumber': req.body.contactNumber,
     'email': req.body.email,
   });
-  businessContacts.updateOne({ _id: id }, updatedContact).then(updatedContact => {
+  BusinessContacts.updateOne({ _id: id }, updatedContact).then(updatedContact => {
     res.redirect('/business-contacts');
   }).catch((err) => {
     console.log(err);
@@ -43,7 +43,7 @@ module.exports.processUpdateBusinessContact = (req, res, next) => {
 
 module.exports.performDelete = (req, res, next) => {
   let id = req.params.id;
-  businessContacts
+  BusinessContacts
     .findOneAndDelete({ _id: id })
     .then(result => {
       console.log('Result: ', result);
