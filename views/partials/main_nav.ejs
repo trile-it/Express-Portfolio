@@ -61,6 +61,15 @@
                         <i class="fa-solid fa-id-card main-nav__fa-icon"></i>Contact
                     </a>
                 </li>
+                <% if(title == "Business Contacts"){ %>
+                <li class="nav-item active">
+                    <% }else{ %>
+                <li class="nav-item">
+                    <% } %>
+                    <a class="nav-link active" aria-current="page" href="/business-contacts">
+                        <i class="fa-solid fa-briefcase main-nav__fa-icon"></i>Business Contacts
+                    </a>
+                </li>
             </ul>
         </div>
 <!--    </div>-->
