@@ -2,7 +2,7 @@ let express = require('express');
 let router = express.Router();
 
 // Connect to our business contacts model
-let businessContacts = require('../models/businessContacts');
+let businessContacts = require('../models/business_contacts');
 
 //GET ROUTE for the Business Contact List page - READ OPERATION
 router.get('/', (req, res, next) => {
