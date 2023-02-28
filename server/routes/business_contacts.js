@@ -11,4 +11,7 @@ router.get('/update/:id', businessContactsController.displayUpdatePage);
 /* POST Route for processing the Update Page - UPDATE operation*/
 router.post('/update/:id', businessContactsController.processUpdateBusinessContact);
 
+/* GET Route for performing Deletion - DELETE Operation*/
+router.get('/delete/:id', businessContactsController.performDelete);
+
 module.exports = router;

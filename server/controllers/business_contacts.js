@@ -40,3 +40,17 @@ module.exports.processUpdateBusinessContact = (req, res, next) => {
     res.end(err);
   });
 }
+
+module.exports.performDelete = (req, res, next) => {
+  let id = req.params.id;
+  businessContacts
+    .findOneAndDelete({ _id: id })
+    .then(result => {
+      console.log('Result: ', result);
+      res.redirect('/business-contacts');
+    })
+    .catch(err => {
+      console.error(err);
+      res.end(err);
+    });
+};
