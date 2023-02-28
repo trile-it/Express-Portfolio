@@ -1,5 +1,5 @@
-<%- include partials/header.ejs %>
-<%- include partials/main_nav.ejs %>
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
 
 <main class="container">
     <div class="row">
@@ -13,6 +13,8 @@
                     <th class="text-center">Name</th>
                     <th class="text-center">Phone Number</th>
                     <th class="text-center">Email</th>
+                    <th class="text-center"></th>
+                    <th class="text-center"></th>
                 </tr>
                 </thead>
                 <!--Table Body-->
@@ -22,6 +24,18 @@
                         <td class="text-center"><%= BusinessContactList[count].contactName %></td>
                         <td class="text-center"><%= BusinessContactList[count].contactNumber %></td>
                         <td class="text-center"><%= BusinessContactList[count].email %></td>
+                        <td class="text-center">
+                            <a href="/business-contacts/update/<%= BusinessContactList[count]._id %>"
+                               class="btn btn-primary">
+                                <i class="fas fa-pencil alt"></i> Update
+                            </a>
+                        </td>
+                        <td class="text-center">
+                            <a href="/business-contacts/delete/<%= BusinessContactList[count]._id %>"
+                               class="btn btn-danger">
+                                <i class="fas fa-trash-alt"></i> Delete
+                            </a>
+                        </td>
                     </tr>
                 <% } %>
                 </tbody>
@@ -31,5 +45,5 @@
 </main>
 
 <!--Script section-->
-<%- include partials/bottom_nav.ejs %>
-<%- include partials/footer.ejs %>
+<%- include ../partials/bottom_nav.ejs %>
+<%- include ../partials/footer.ejs %>
