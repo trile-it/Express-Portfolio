@@ -4,6 +4,7 @@
  * Student ID: 301323963
  * Date: Feb 9, 2023
  */
+require('dotenv').config({ path: __dirname + '/env/local.env' });
 
 let createError = require('http-errors');
 let express = require('express');
@@ -13,9 +14,20 @@ let logger = require('morgan');
 
 // Database setup
 let mongoose = require('mongoose');
+const { ServerApiVersion } = require('mongodb');
 let DB = require('./db');
 // Point mongoose to the DB URI
-mongoose.connect(DB.URI, { useNewUrlParser: true, useUnifiedtopology: true });
+if (process.env.PRODUCTION_ENV) {
+  mongoose.connect(
+    DB.URI,
+    { useNewUrlParser: true, useUnifiedTopology: true, serverApi: ServerApiVersion.v1 },
+  );
+} else {
+  mongoose.connect(
+    DB.URI,
+    { useNewUrlParser: true, useUnifiedTopology: true },
+  );
+}
 // Create an event to let mongo connect to the database
 let mongoDB = mongoose.connection;
 mongoDB.on('error', console.error.bind(console, 'Connection Error:'));

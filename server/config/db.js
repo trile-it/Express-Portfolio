@@ -1,3 +1,3 @@
 module.exports = {
-  'URI': 'mongodb://localhost/express_portfolio',
+  URI: process.env.DB_CONNECTION_URI,
 };
