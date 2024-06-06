@@ -100,7 +100,7 @@ a {
   padding: 15px 15px 15px 0;
 }
 
-.product-page__project__details p {
+.product-page__project__details * {
   font-size: 26px;
 }
 
